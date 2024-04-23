@@ -1,0 +1,153 @@
+/*===== GOOGLE FONTS =====*/
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap');
+/*===== VARIABLES CSS =====*/
+:root{
+    --first-color:  #e67e22; /* Primary color */
+    --first-color-tint-1: #fdf2e9; /* Lighter tint */
+    --first-color-tint-2: #fae5d3; /* Even lighter tint */
+    --first-color-tint-3: #eb984e; /* Light tint */
+    --first-color-shade-1: #cf711f; /* Darker shade */
+    --first-color-shade-2: #45260a; /* Even darker shade */
+    --second-color: #2c3e50; /* Dark background */
+    --third-color: #cf711f; /* Red for contrast */
+    --four-color: #fff; /* White for text */
+    --body-font: 'Quicksand', sans-serif;
+    --normal-font-size: 1rem;
+  }
+  
+  body{
+    margin: 0;
+    font-family: var(--body-font);
+    background: radial-gradient(50% 123.47% at 50% 50%, #00ff94 0%, #720059 100%),
+    linear-gradient(121.28deg, #669600 0%, #ff0000 100%),
+    linear-gradient(360deg, #0029ff 0%, #8fff00 100%),
+    radial-gradient(100% 164.72% at 100% 100%, #6100ff 0%, #00ff57 100%),
+    radial-gradient(100% 148.07% at 0% 0%, #fff500 0%, #51d500 100%);
+    background-blend-mode: screen, color-dodge, overlay, difference, normal;
+    min-height: 100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .main{
+   /* lay, difference, normal; */
+      padding:50px 0;
+  }
+  
+  
+  .card{
+      box-shadow: 0 4px 8px 0 #cf711f, 0 6px 20px 0 rgba(0,0,0,0.19);
+      width:300px;
+      border-radius: 29px;
+  }
+  .card:hover,.card:focus{
+      box-shadow: 0 8px 16px rgba(54, 41, 29, 0.3), 0 12px 40px rgba(0, 0, 0, 0.3); /* Increase the box shadow */
+  }
+  
+  
+  
+  .pay{
+      font-size: 18px;
+      color:var(--first-color);
+      font-weight: 600;
+      margin-top:5px;
+  }
+  
+  .amount{
+      background-color:var(--first-color-tint-1); /* Light tint */
+      border-radius: 8px;
+  }
+  
+  .inner{
+      padding:8px 19px;
+  }
+  
+  .dollar{
+      color:var(--first-color);
+      font-size: 20px;
+      font-weight: 500;
+  }
+  
+  .total{
+      font-size: 20px;
+      font-weight: 500;
+      color: var(--third-color); 
+  }
+  
+  .labeltxt{
+      font-size: 13px;
+      color:var(--first-color);
+      font-weight: 500;
+      margin-top:5px;
+  }
+  
+  .image{
+      position: relative;
+      top:44px;
+      right:13px;
+  }
+  
+  .form-control:focus{
+      box-shadow: none;
+  }
+  
+  .inputtxt{
+      color:var(--four-color) !important;
+      font-weight: bold;
+      font-size: 14px;
+      padding:21px 15px;
+      border:2px solid var(--first-color);
+      border-radius: 7px;
+  }
+  
+  .exptxt, .cvvtxt{
+      color: var(--first-color); 
+      font-size: 13px;
+      font-weight: 500;
+  }
+  
+  .expiry, .cvv{
+      padding:21px 15px;
+      width:120px;
+      font-size: 14px;
+      font-weight: bold;
+      border:2px solid var(--first-color);
+      border-radius: 7px;
+  }
+  
+  .cancel{
+      color:red;
+      font-size: 14px;
+      font-weight: 500;
+      border:none;
+      border: 2px solid var(--first-color) ;
+  }
+  
+  .cancel:hover,
+  .cancel:focus{
+    color:var(--four-color);
+    background-color: var(--first-color-shade-1); 
+    transform: translateY(2px); 
+    box-shadow: 0 2px var(--first-color-shade-2);
+  }
+  
+  .payment{
+      font-weight: 600;
+      font-size: 14px;
+      background-color:var(--first-color); /* Primary color */
+      border:none;
+      width:150px;
+      color:var(--four-color);
+      padding:15px 10px;
+      border-radius: 11px;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out; 
+  }
+  
+  .payment:hover{
+      color:var(--four-color);
+      background-color: var(--first-color-shade-1); 
+      transform: translateY(2px); 
+      box-shadow: 0 2px var(--first-color-shade-2); 
+  }
